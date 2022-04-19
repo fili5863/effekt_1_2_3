@@ -2,11 +2,11 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
   console.log("sidenVises");
   document
-    .querySelector("#blue_container")
-    .addEventListener("clock", blueClickHandler);
+    .querySelector("#red_container")
+    .addEventListener("click", redClickHandler);
 }
 
-function blueClickHandler() {
-  console.log("blueClickHandler");
-  document.querySelector("#blue_sprite");
+function redClickHandler() {
+  console.log("redClickHandler");
+  document.querySelector("#red_container").classList.add("forsvind");
 }
